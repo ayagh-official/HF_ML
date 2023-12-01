@@ -7,7 +7,7 @@ from tensorflow.keras.models import load_model
 
 app = FastAPI()
 
-model_path = r'C:\Users\user\trainedModel.h5'
+model_path = "./trainedModel.h5"
 binary_model = load_model(model_path)
 
 
