@@ -41,7 +41,7 @@ async def ping():
 @app.post("/predict")
 def predict(item: Item):
     # Map categorical variables to numerical values
-    gender_mapping = {'Male': 0, 'Female': 1}
+    gender_mapping = {'Female': 0,'Male': 1}
 
     # Convert input data to a NumPy array
     input_data = np.array([[
